@@ -1,7 +1,7 @@
 # AWS MLOps Pipeline
 This MLOps pipeline leverages a suite of AWS services, including CodeCommit, CodeBuild, CodePipeline, Lambda functions, and SageMaker, to seamlessly integrate machine learning workflows into development and deployment processes.
 
-![]("assets/img1.png")
+![Pipelien Architecture](assets/img1.png)
 
 # 1. Infra as Code(Iac) - Iac
 The MLOps pipeline leverage Terraform as the Infrastructure as Code (IaC) tool for automation, transparency, reproducibility and mitigation of documentatios gaps. As the infrastructure needs evolve, Terraform allows seamless updates and modifications with minimal effort. It ensures the MLOps pipeline remains agile and adaptable to changing project demands. To effortlessly spin up the required infrastructure, follow these steps:
