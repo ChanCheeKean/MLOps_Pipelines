@@ -114,8 +114,13 @@ response = json.loads(requests.post(url, json=payload).json()['body'])
 print(response)
 ```
 
+## About
+- **Author:** CheeKean
+- **Email:** zekinchan@gmail.com
+- **Created:** 14th Nov 2023
+- **Last Updated:** 14th Nov 2023
 
-# Temporary
+## Temporary
 ```
 git add . && git commit -m 'init commit' && git push -u origin master
 aws sagemaker describe-endpoint --endpoint-name ml-infra-iris-predictor
