@@ -14,7 +14,7 @@ resource "aws_synthetics_canary" "cloudwatch_canary" {
   }
 }
 
-resource "aws_cloudwatch_metric_alarm" "foobar" {
+resource "aws_cloudwatch_metric_alarm" "cloudwatch_alarm" {
   alarm_name                = "${var.project_name}-${local.deploy-env}-endpoint"
   comparison_operator       = "LessThanThreshold"
   evaluation_periods        = 2

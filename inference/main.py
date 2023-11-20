@@ -1,4 +1,5 @@
 import boto3
+import json
 runtime = boto3.client("sagemaker-runtime")
 
 def handler(event, context):
@@ -9,7 +10,7 @@ def handler(event, context):
     context =  event["context"]
     response = runtime.invoke_endpoint(
         EndpointName='ml-infra-iris-predictor',
-        Body=context",
+        Body=context,
         ContentType="text/csv",
     )
 

@@ -17,7 +17,7 @@ resource "aws_sagemaker_model_package_group" "sagemaker_group" {
   model_package_group_name = "${var.project_name}-${local.deploy-env}-packagegroup"
 }
 
-resource "aws_sagemaker_model_package_group_policy" "example" {
+resource "aws_sagemaker_model_package_group_policy" "sagemaker_policy" {
   model_package_group_name = aws_sagemaker_model_package_group.sagemaker_group.model_package_group_name
   resource_policy          = jsonencode(jsondecode(data.package_group_policy.example.json))
 }
